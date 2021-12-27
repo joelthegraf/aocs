@@ -29,10 +29,8 @@ fs.readFileSync("input.txt", "utf-8")
     ds.push({ f, t, d: parseInt(d) }, { f: t, t: f, d: parseInt(d) });
     cs.push(f, t);
   });
-
 let rs = p([...new Set(cs)]);
 let rds = [];
-
 for (r of rs) {
   let rd = 0;
   for (let i = 0; i < r.length - 1; i++) {
@@ -40,5 +38,4 @@ for (r of rs) {
   }
   rds.push(rd);
 }
-
 console.log(Math.min(...rds));
