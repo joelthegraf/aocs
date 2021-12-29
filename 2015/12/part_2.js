@@ -1,10 +1,10 @@
 const fs = require("fs");
 
 const p = (d) => {
-  let sum = 0;
+  let s = 0;
   const r = (e) => {
     if (typeof e === "number") {
-      sum += e;
+      s += e;
     } else if (e instanceof Array) {
       for (v of e) {
         r(v);
@@ -16,7 +16,7 @@ const p = (d) => {
     }
   };
   r(d);
-  return sum;
+  return s;
 };
 
 let d = JSON.parse(fs.readFileSync("input.txt", "utf-8"));
