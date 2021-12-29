@@ -1,6 +1,6 @@
 # aocs
  
-My solutions to the puzzles of [adventofcode.com](https://adventofcode.com) ⭐ 
+My solutions to the puzzles of [adventofcode.com](https://adventofcode.com). ⭐ 
 
 ## 2015
 
