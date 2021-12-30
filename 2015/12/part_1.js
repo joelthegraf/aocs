@@ -15,10 +15,6 @@ const p = (d) => {
   const r = (e) => {
     if (typeof e === "number") {
       s += e;
-    } else if (e instanceof Array) {
-      for (v of e) {
-        r(v);
-      }
     } else if (typeof e === "object") {
       for (v of Object.values(e)) {
         r(v);
